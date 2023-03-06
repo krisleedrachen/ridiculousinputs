@@ -1,0 +1,78 @@
+body {
+  background-color: #f5f1e6;
+}
+
+.container {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.title {
+  font-size: 45px;
+  font-family: Tilt Warp;
+  color: #1e8fff;
+  margin: auto;
+}
+
+.explaination {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+/* active making the little buzz affect*/
+button:active {
+  transform: translateY(2px);
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+.cloud {
+  margin-right: 130px;
+}
+.cloud :hover {
+  fill: #00abff;
+}
+.sun :hover {
+  fill: #ffc400;
+}
+
+.between {
+  margin-bottom: 20px;
+}
+
+.center {
+  margin: 0 auto;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  margin: 10px;
+}
+/*when having aboslute it follows it's closest parent which is relative*/
+.water {
+  background-color: #00abff;
+  position: absolute;
+  /*positions and buttom left width height..will change..?*/
+  bottom: 0;
+  left: 0;
+  /*better than 400px I guess*/
+  width: 100%;
+  height: 0;
+  transition: height 1s;
+  /*bigger slower transi*/
+}
